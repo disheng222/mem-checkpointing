@@ -1,0 +1,120 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\citation{detection-sc12}
+\citation{Benson-SED}
+\citation{cite:scalable-rep}
+\citation{cite:scal-rep2}
+\citation{stearley_rmpi_2011}
+\citation{petrini_scaling_2002}
+\citation{sorin_safetynet_2002}
+\citation{prvulovic_revive_2002}
+\citation{dong_leveraging_2009}
+\citation{kannan_optimizing_2013}
+\citation{gao_real-time_2015}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}}
+\citation{dong_leveraging_2009}
+\citation{kannan_optimizing_2013}
+\citation{gao_real-time_2015}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background and Design Motivation}{2}{section.2}}
+\newlabel{sec:motivation}{{II}{2}{Background and Design Motivation}{section.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Consistency Problem of Memory-based Checkpointing. Memory-based Checkpointing only changes the role of working memory to checkpoint without copy. Thus checkpoint and working memory share the same data. The modification of working memory also means the modification of checkpoint. Such modification corrupts the consistency of checkpoint and makes it can not be used for recovery. \relax }}{2}{figure.caption.1}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:consistency}{{1}{2}{Consistency Problem of Memory-based Checkpointing. Memory-based Checkpointing only changes the role of working memory to checkpoint without copy. Thus checkpoint and working memory share the same data. The modification of working memory also means the modification of checkpoint. Such modification corrupts the consistency of checkpoint and makes it can not be used for recovery. \relax }{figure.caption.1}{}}
+\citation{qureshi_scalable_2009}
+\citation{qureshi_morphable_2010}
+\citation{park_power_2011}
+\citation{yoon_row_2012}
+\citation{ham_disintegrated_2013}
+\citation{zhou_leveraging_2013}
+\citation{kannan_optimizing_2013}
+\citation{gao_real-time_2015}
+\citation{rajachandrasekar_1_2013}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The Percentage of Extra Writes of Page Level Copy-on-Write\relax }}{3}{figure.caption.2}}
+\newlabel{fig:modifies}{{2}{3}{The Percentage of Extra Writes of Page Level Copy-on-Write\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}System Design}{3}{section.3}}
+\newlabel{sec:design}{{III}{3}{System Design}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Overview}{3}{subsection.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Twins Page Mapping\relax }}{3}{figure.caption.3}}
+\newlabel{fig:page_mapping}{{3}{3}{Twins Page Mapping\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Twins Page Mapping}{3}{subsection.3.2}}
+\newlabel{sec:page_mapping}{{\unhbox \voidb@x \hbox {III-B}}{3}{Twins Page Mapping}{subsection.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces An Example of Using Twins Page Mapping to Keep Checkpoint Consistent. We suppose a page with four cache lines. \unhbox \voidb@x \let \reserved@d =[\def \par }}{4}{figure.caption.4}}
+\newlabel{fig:page_mapping_example}{{4}{4}{An Example of Using Twins Page Mapping to Keep Checkpoint Consistent. We suppose a page with four cache lines. \circled {1} During initial execution period, all data is working memory. \circled {2} At the end of first checkpointing period, all data becomes checkpoint. \circled {3} In the period of second execution, any write to checkpoint will trigger the allocation of Derivation Page. Write request will be redirected to corresponding cache line which does not stores checkpoint. Then such checkpoint data will have only one role of checkpoint, and the corresponding cache lines will be given a role of working memory. \circled {4} When second checkpointing period ends, working memory becomes checkpoint and other data is dropped. \relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Coordinating with Hybrid Memory System}{4}{subsection.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}1}Avoid Intercepting All Memory Requests}{4}{subsubsection.3.3.1}}
+\newlabel{sec:design_mitigating_metadata}{{\unhbox \voidb@x \hbox {III-C}2}{4}{Mitigating Metadata Overhead}{subsubsection.3.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}2}Mitigating Metadata Overhead}{4}{subsubsection.3.3.2}}
+\citation{qureshi_scalable_2009}
+\citation{ham_disintegrated_2013}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Page Access Process\relax }}{5}{figure.caption.5}}
+\newlabel{fig:tag_access}{{5}{5}{Page Access Process\relax }{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces DPT columns\relax }}{5}{table.caption.6}}
+\newlabel{tbl:metadata}{{I}{5}{DPT columns\relax }{table.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Implementation}{5}{section.4}}
+\newlabel{sec:implementation}{{IV}{5}{Implementation}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Metadata Management}{5}{subsection.4.1}}
+\newlabel{sec:implementation_metadata}{{\unhbox \voidb@x \hbox {IV-A}}{5}{Metadata Management}{subsection.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Divide and Merge Processes of Twins Page Mapping\relax }}{6}{figure.caption.7}}
+\newlabel{fig:divide_and_merge}{{6}{6}{Divide and Merge Processes of Twins Page Mapping\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Page Movement Between DRAM and PCM}{6}{subsection.4.2}}
+\newlabel{sec:implementation_hybrid_memory_system}{{\unhbox \voidb@x \hbox {IV-B}}{6}{Page Movement Between DRAM and PCM}{subsection.4.2}{}}
+\newlabel{eq:tmp_tag_in_twin_page}{{1}{6}{Page Movement Between DRAM and PCM}{equation.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Derivation Page Management}{6}{subsection.4.3}}
+\newlabel{sec:page_pool}{{\unhbox \voidb@x \hbox {IV-C}}{6}{Derivation Page Management}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}1}Derivation Page Pool}{6}{subsubsection.4.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}2}Allocating Derivation Page}{6}{subsubsection.4.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}3}Releasing Derivation Page}{6}{subsubsection.4.3.3}}
+\citation{patel_marss_2011}
+\citation{rosenfeld_dramsim2_2011}
+\citation{poremba_nvmain_2015}
+\citation{lee_architecting_2009}
+\citation{stevens_integrated_2013}
+\citation{sorin_safetynet_2002}
+\citation{spec2006benchmark}
+\citation{jaleel_memory_2010}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Checkpointing}{7}{subsection.4.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Evaluation}{7}{section.5}}
+\newlabel{sec:evaluation}{{V}{7}{Evaluation}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Experimental Methodology}{7}{subsection.5.1}}
+\newlabel{sec:evaluation_methodology}{{\unhbox \voidb@x \hbox {V-A}}{7}{Experimental Methodology}{subsection.5.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-A}1}Experimental Platform}{7}{subsubsection.5.1.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Workloads\relax }}{7}{table.caption.8}}
+\newlabel{tbl:workloads}{{II}{7}{Workloads\relax }{table.caption.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-A}2}Comparison}{7}{subsubsection.5.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-A}3}Workloads}{7}{table.caption.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Overall Evaluation}{7}{subsection.5.2}}
+\newlabel{sec:evaluation_overall}{{\unhbox \voidb@x \hbox {V-B}}{7}{Overall Evaluation}{subsection.5.2}{}}
+\newlabel{fig:overall_time}{{7a}{8}{Workload Execution Time\relax }{figure.caption.9}{}}
+\newlabel{sub@fig:overall_time}{{a}{8}{Workload Execution Time\relax }{figure.caption.9}{}}
+\newlabel{fig:overall_write}{{7b}{8}{PCM Write Amount\relax }{figure.caption.9}{}}
+\newlabel{sub@fig:overall_write}{{b}{8}{PCM Write Amount\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Overall Performance\relax }}{8}{figure.caption.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Storage Overhead}{8}{subsection.5.3}}
+\newlabel{sec:evaluation_storage_overhead}{{\unhbox \voidb@x \hbox {V-C}}{8}{Storage Overhead}{subsection.5.3}{}}
+\newlabel{fig:overall_time_different_pool_size}{{8a}{8}{Workload Execution Time\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:overall_time_different_pool_size}{{a}{8}{Workload Execution Time\relax }{figure.caption.10}{}}
+\newlabel{fig:overall_write_different_pool_size}{{8b}{8}{PCM Write Amount\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:overall_write_different_pool_size}{{b}{8}{PCM Write Amount\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Performance with Different Derivation Page Pool Size\relax }}{8}{figure.caption.10}}
+\bibstyle{IEEEtran}
+\bibdata{IEEEabrv,bib/paper/bibliography}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-D}}Metadata Overhead}{9}{subsection.5.4}}
+\newlabel{sec:evaluation_metadata}{{\unhbox \voidb@x \hbox {V-D}}{9}{Metadata Overhead}{subsection.5.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{9}{section.6}}
+\newlabel{sec:conclusion}{{VI}{9}{Conclusion}{section.6}{}}

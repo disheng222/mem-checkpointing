@@ -1,0 +1,14 @@
+
+@inproceedings{kannan_optimizing_2013,
+	series = {{IPDPS}},
+	title = {Optimizing {Checkpoints} {Using} {NVM} as {Virtual} {Memory}},
+	doi = {10.1109/IPDPS.2013.69},
+	abstract = {Rapid checkpointing will remain key functionality for next generation high end machines. This paper explores the use of node-local nonvolatile memories (NVM) such as phase-change memory, to provide frequent, low overhead checkpoints. By adapting existing multi-level checkpoint techniques, we devise new methods, termed NVM-checkpoints, that efficiently store checkpoints on both local and remote node NVM. The checkpoint frequencies are guided by failure models that capture the expected accessibility of such data after failure. To lower overheads, NVM-checkpoints reduce the NVM and interconnect bandwidth used with a novel pre-copy mechanism, which incrementally moves checkpoint data from DRAM to NVM before a local checkpoint is started. This reduces local checkpoint cost by limiting the instantaneous data volume moved at checkpoint time, thereby freeing bandwidth for use by applications. In fact, the pre-copy method can reduce peak interconnect usage up to 46\%. Since our approach treats NVM as memory rather than as 'Ramdisk', pre-copying can be generalized to directly move data to remote NVMs. This results in 40\% faster application execution times compared to asynchronous approaches not using pre-copying.},
+	booktitle = {2013 {IEEE} 27th {International} {Symposium} on {Parallel} {Distributed} {Processing}},
+	author = {Kannan, S. and Gavrilovska, A. and Schwan, K. and Milojicic, D.},
+	month = may,
+	year = {2013},
+	keywords = {Bandwidth, CCF-B, checkpoint frequency, checkpointing, checkpoint optimization, data accessibility, DMA, DRAM, DRAM chips, failure analysis, failure model, fault tolerance, Hardware, Helpful, information retrieval, local node NVM, Memory bandwidth, multilevel checkpoint technique, next generation high end machine, nonvolatile memory, Non volatile memory (NVM), optimisation, PCM, Peer-to-peer computing, Perusal, Phase change materials, Pre-Copy, precopy mechanism, Random access memory, remote node NVM, Top, virtual machines, virtual memory, virtual storage},
+	pages = {29--40},
+	file = {IEEE Xplore Abstract Record:/home/oryxfea/.zotero/zotero/6f7ucgr9.default/zotero/storage/EZNFCJ6Z/abs_all.html:text/html;IEEE Xplore Full Text PDF:/home/oryxfea/.zotero/zotero/6f7ucgr9.default/zotero/storage/F4GB4TSE/Kannan 等. - 2013 - Optimizing Checkpoints Using NVM as Virtual Memory.pdf:application/pdf}
+}
