@@ -1,3 +1,4 @@
 # mem-checkpointing
-SC16 good luck
-test
+To be submitted to SC16 
+Good luck!
+
